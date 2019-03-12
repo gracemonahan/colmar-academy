@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
   </head>
 
   <body>
@@ -21,13 +22,13 @@
         <span>Sign In</span>
       </nav>
     </header>
-
 <!--First section which contains an image and a column-->
+  <main>
     <div class="banner container">
-      <div class="big-image">
+      <div class="big-media column sixty">
         <img src="./resources/images/banner.jpg" alt="Friends Studying">
       </div>
-      <div class="column">
+      <div class="column forty">
         <h1>Learn something new everyday</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <span class="button">Start here</span>
@@ -36,16 +37,16 @@
 
 <!--Second section which contains two columns-->
     <div class="hurt container">
-      <div class="column left">
-        <div class="big-image">
-          <img src=".resources/images/information-main.jpg" alt="Man Reading">
+      <div class="column sixty">
+        <div class="big-media">
+          <img src="./resources/images/information-main.jpg" alt="Man Reading">
         </div>
         <h1>It doesn't hurt to keep practicing</h1>
         <span>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusam urna. Phasellus sed consequat ex. Etiam egnet magna laoreet, efficitur dolor consequat, tristique ligula."</span>
         <span class="tiny">Emmanuel, Sr Strategist at Hiring.com</span>
       </div>
 
-      <div class="column right">
+      <div class="column forty">
         <div class="strip container top">
           <div class="small-image">
             <img src="./resources/images/information-orientation.jpg" alt="Shadows">
@@ -144,8 +145,10 @@
       <h1></h1>
       <div class="container">
         <div class="column left">
-          <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-          </video>
+          <div class="big-media">
+            <video src="./resources/videos/thesis.mp4" autoplay width="320" height="240"  poster="./resources/images/banner.jpg">
+            </video>
+          </div>
           <h4></h4>
           <span></span>
         </div>
@@ -171,7 +174,7 @@
         </div>
       </div>
     </div>
-
+  </main>
 <!--footer section-->
     <footer class="container">
       <span class="tiny">© 2016 Colmar Academy. All rights reserved.</span>

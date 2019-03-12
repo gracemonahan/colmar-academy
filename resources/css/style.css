@@ -1,0 +1,111 @@
+/* add Space Grotesk font info*/
+@font-face {
+  font-family: 'Space-Bold';
+  src: url("../fonts/SpaceGrotesk-Bold.otf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Space-Light';
+  src: url("../fonts/SpaceGrotesk-Light.otf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Space-Medium';
+  src: url("../fonts/SpaceGrotesk-Medium.otf") format('truetype');
+}
+/*Universal Rules*/
+html {
+  font-size: 16px;
+  font-family: 'Space-Light', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-image {
+  height: auto;
+  width: 35%;
+}
+
+.baby .column {
+  width: 65%;
+}
+
+.big-media {
+  padding: 2rem 1.5rem;
+}
+
+.column .forty {
+  width: 40%;
+}
+
+.column .sixty {
+  width: 60%;
+}
+
+
+/*Header Rules*/
+header {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-left: 1.5rem;
+}
+
+.logo span {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+}
+
+header nav {
+  padding-right: .5rem;
+}
+
+header nav span {
+  padding-right: 1rem;
+}
+
+#colmar {
+  color: #3A567F;
+}
+
+#academy {
+  color: #778899;
+}
+/*First 'banner' section Rules*/
+main {
+  padding-top: 4rem;
+}
+/*Second 'hurt' section Rules*/
+.blue {
+  color: #53A9FF;
+}
+/*Third 'start-learning' section Rules*/
+.medium-image {
+  height: auto;
+}
+
+/*Fourth 'thesis' section Rules*/
+
+/*Footer Rules*/
