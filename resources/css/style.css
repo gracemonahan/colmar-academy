@@ -38,16 +38,14 @@ h4 {
   color: #474747; /*darkerdimgrey*/
 }
 
-
-
 span {
   line-height: 1.3;
+  color: #474747;
 }
 
 .container {
   display: flex;
   width: 100%;
-  overflow: scroll;
 }
 
 .column {
@@ -128,7 +126,7 @@ main {
   margin: 2rem .75rem 2rem 1.5rem;
 }
 
-.column.forty {
+.banner .column.forty {
   justify-content: center;
 }
 
@@ -149,12 +147,7 @@ main {
 }
 
 /*Second 'hurt' section Rules*/
-.hurt {
-  height: 42rem;
-}
-
-
-   /*left side rules*/
+/*left side*/
 .hurt h1 {
   padding-top: 2rem;
 }
@@ -166,8 +159,6 @@ main {
 .hurt .sixty {
   padding: 2rem 1.5rem;
   border-right: lightgrey solid 0.5px;
-
-
 }
 
 .hurt .tiny {
@@ -176,11 +167,9 @@ main {
   font-size: 0.75rem;
 }
 
-
-   /*right side rules*/
+/*right side rules*/
 .small-image {
   width: 35%;
-  display: flex;
   padding: 1rem;
 }
 
@@ -192,8 +181,6 @@ main {
 
 .baby.column {
   width: 65%;
-  padding: 2rem;
-  height: auto;
   justify-content: center;
 }
 
@@ -204,14 +191,20 @@ main {
 .strip .baby span {
   padding-top: .5rem;
 }
+
 .strip:hover {
   background-color: lightgrey;
 }
 
-.hurt .forty {
-  border: red 2px solid;
-  margin-bottom: 4rem;
+.strip {
+  border-top: lightgrey solid 0.5px;
+  border-bottom: lightgrey solid 0.5px;
+  margin-bottom: 1px;
+  height: auto;
+}
 
+.hurt .forty {
+  margin-bottom: 4rem;
 }
 
 
@@ -220,7 +213,6 @@ main {
   height: auto;
   width: 100%;
 }
-
 
 .start-learning {
   padding: 2rem 4.5rem 0rem 4.5rem;
@@ -255,6 +247,49 @@ main {
   padding: .5rem 0rem;
 }
 
-/*Fourth 'thesis' section Rules*/
+.learning:hover {
+  background-color: #53A9FF;
+}
+
+/*Fourth 'thesis' section Rules - some rules from section 2 also apply to the right side of this section*/
+.thesis {
+  border-bottom: .5px lightgrey solid;
+}
+
+.thesis h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.thesis .sixty {
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.big-media video {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.thesis .sixty span {
+  padding-bottom: 2rem;
+  padding-top: .5rem;
+}
+
+.thesis .forty {
+  justify-content: flex-start;
+}
+
+.thesis .strip {
+  border: none;
+}
 
 /*Footer Rules*/
+footer {
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer nav span {
+  padding-left: .5rem;
+}
