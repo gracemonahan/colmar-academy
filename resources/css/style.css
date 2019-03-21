@@ -13,6 +13,7 @@
   font-family: 'Space-Medium';
   src: url("../fonts/SpaceGrotesk-Medium.otf") format('truetype');
 }
+
 /*Universal Rules*/
 html {
   font-size: 16px;
@@ -31,15 +32,22 @@ h2 {
   color: #474747; /*darkerdimgrey*/
 }
 
-span {
-  line-height: 1.5;
+h4 {
+  font-family: 'space-medium';
+  font-size: 1.3rem;
+  color: #474747; /*darkerdimgrey*/
 }
+
+
+
+span {
+  line-height: 1.3;
+}
+
 .container {
-  display: inline-flex;
-  border: purple 3px dotted;
+  display: flex;
   width: 100%;
   overflow: scroll;
-
 }
 
 .column {
@@ -47,25 +55,12 @@ span {
   flex-direction: column;
 }
 
-.small-image {
-  height: auto;
-  width: 35%;
-}
-
-.baby .column {
-  width: 65%;
-}
-
-
-
 .forty {
   width: 40%;
-  border: 2px red solid;
 }
 
 .sixty {
   width: 60%;
-  border: blue 2px solid;
 }
 
 
@@ -112,29 +107,35 @@ header nav span {
 #academy {
   color: #778899;
 }
+
 /*First 'banner' section Rules*/
 main {
   padding-top: 4rem;
 }
+
 .banner {
   background-color: lightgrey;
-  height: 40rem;
+  height: 35rem;
 }
 
 .big-media img {
-  padding: 2rem;
   width: 100%;
+  margin: 0 auto;
+}
+
+.banner .big-media {
+  display: flex;
+  margin: 2rem .75rem 2rem 1.5rem;
 }
 
 .column.forty {
   justify-content: center;
 }
 
-.column.forty h1,
-.column.forty h2,
-.column.forty span {
-  margin: 1.3rem;
-
+.banner .column.forty h1,
+.banner .column.forty h2,
+.banner .column.forty span {
+  margin: 0.75rem;
 }
 
 .button {
@@ -148,13 +149,110 @@ main {
 }
 
 /*Second 'hurt' section Rules*/
+.hurt {
+  height: 42rem;
+}
+
+
+   /*left side rules*/
+.hurt h1 {
+  padding-top: 2rem;
+}
+
+.hurt .left-text {
+  padding-top: 1.5rem;
+}
+
+.hurt .sixty {
+  padding: 2rem 1.5rem;
+  border-right: lightgrey solid 0.5px;
+
+
+}
+
+.hurt .tiny {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.75rem;
+}
+
+
+   /*right side rules*/
+.small-image {
+  width: 35%;
+  display: flex;
+  padding: 1rem;
+}
+
+.small-image img {
+  height: auto;
+  width: 100%;
+  padding-top: .5rem;
+}
+
+.baby.column {
+  width: 65%;
+  padding: 2rem;
+  height: auto;
+  justify-content: center;
+}
+
 .blue {
   color: #53A9FF;
 }
+
+.strip .baby span {
+  padding-top: .5rem;
+}
+.strip:hover {
+  background-color: lightgrey;
+}
+
+.hurt .forty {
+  border: red 2px solid;
+  margin-bottom: 4rem;
+
+}
+
+
 /*Third 'start-learning' section Rules*/
 .medium-image img {
   height: auto;
   width: 100%;
+}
+
+
+.start-learning {
+  padding: 2rem 4.5rem 0rem 4.5rem;
+  background-color: lightgrey;
+}
+
+.start-learning h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.learning {
+  background-color: white;
+  width: 30%;
+}
+
+.row.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.learning .text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.courses {
+  padding: .5rem 0rem;
 }
 
 /*Fourth 'thesis' section Rules*/
