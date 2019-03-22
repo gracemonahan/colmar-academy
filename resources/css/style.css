@@ -61,6 +61,39 @@ span {
   width: 60%;
 }
 
+.mobile {
+  display: none;
+}
+
+/*Universal Mobile Rules for screens under 550px*/
+@media only screen and (max-width: 550px) {
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: flex;
+  width: 100%;
+}
+
+.forty,
+.sixty {
+  width: auto;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.medium-image {
+  display: none;
+}
+
+}
+
 
 /*Header Rules*/
 header {
@@ -106,6 +139,16 @@ header nav span {
   color: #778899;
 }
 
+/*mobile header rules*/
+@media only screen and (max-width: 550px) {
+
+  .mobile nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+  }
+}
+
 /*First 'banner' section Rules*/
 main {
   padding-top: 4rem;
@@ -113,16 +156,18 @@ main {
 
 .banner {
   background-color: lightgrey;
-  height: 35rem;
+  height: auto;
 }
 
 .big-media img {
   width: 100%;
   margin: 0 auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .banner .big-media {
-  display: flex;
+  display: inline;
   margin: 2rem .75rem 2rem 1.5rem;
 }
 
@@ -144,6 +189,38 @@ main {
   display: flex;
   justify-content: center;
   color: white;
+}
+
+/*mobile banner*/
+@media only screen and (max-width: 550px) {
+
+  .banner .big-media {
+    display: inline;
+    margin: 0rem;
+    height: auto;
+  }
+
+  .banner .forty {
+    padding: 2rem 1rem;
+  }
+
+  .banner .forty h1 {
+    padding-bottom: 2rem;
+  }
+
+  .banner .forty h2 {
+    padding-bottom: 1.5rem;
+  }
+
+  .button {
+    width: auto;
+  }
+
+  .banner .column.forty h1,
+  .banner .column.forty h2,
+  .banner .column.forty span {
+    margin: 0rem;
+  }
 }
 
 /*Second 'hurt' section Rules*/
@@ -207,6 +284,36 @@ main {
   margin-bottom: 4rem;
 }
 
+/*mobile rules for second section*/
+@media only screen and (max-width: 550px) {
+
+  .hurt .small-image {
+    width: auto;
+  }
+
+  .small-image img {
+    padding: 0rem;
+  }
+
+  .small-image {
+    padding: 0rem;
+  }
+
+  .hurt .forty {
+    margin-bottom: 0rem;
+  }
+
+  .strip {
+    padding: 1rem 1rem 3rem 1rem;
+    width: auto;
+  }
+
+  .strip .baby {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 
 /*Third 'start-learning' section Rules*/
 .medium-image img {
@@ -251,14 +358,39 @@ main {
   background-color: #53A9FF;
 }
 
+/*Third section Mobile rules */
+@media only screen and (max-width: 550px) {
+  .text span {
+    display: none;
+  }
+
+  .start-learning {
+    background-color: white;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+
+  .learning {
+    width: auto;
+    background-color: lightgrey;
+    margin-bottom: 0.5rem;
+  }
+
+  .row.container {
+    margin: 0rem;
+  }
+
+  .start-learning h1 {
+    padding-bottom: 1rem;
+  }
+}
+
 /*Fourth 'thesis' section Rules - some rules from section 2 also apply to the right side of this section*/
 .thesis {
   border-bottom: .5px lightgrey solid;
-}
-
-.thesis h1 {
-  text-align: center;
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .thesis .sixty {
@@ -281,6 +413,27 @@ main {
 
 .thesis .strip {
   border: none;
+}
+
+.thesis .desktop {
+  padding: 2rem 0rem;
+}
+
+/*Mobile Thesis Section Rules*/
+@media only screen and (max-width: 550px) {
+  .thesis .mobile {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .thesis .sixty {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .thesis {
+    border: none;
+  }
 }
 
 /*Footer Rules*/

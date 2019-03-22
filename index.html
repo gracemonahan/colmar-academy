@@ -9,8 +9,8 @@
   </head>
 
   <body>
-<!--Header-->
-    <header>
+<!--Desktop Header-->
+    <header class="desktop">
       <div class="logo">
         <img src="./resources/images/ic-logo.svg" alt="Proud Lion">
         <span id="colmar">COLMAR</span><span id="academy">ACADEMY</span>
@@ -22,6 +22,24 @@
         <span>Sign In</span>
       </nav>
     </header>
+
+    <!--Mobile Header-->
+    <header class="mobile">
+      <nav class="mobile">
+        <img src="./resources/images/ic-logo.svg" alt="Logo">
+        <img src="./resources/images/ic-on-campus.svg" alt="Desk">
+        <img src="./resources/images/ic-online.svg" alt="Computer">
+        <img src="./resources/images/ic-login.svg" alt="Person">
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
 <!--First section which contains an image and a column-->
   <main>
     <div class="banner container">
@@ -37,7 +55,7 @@
 
 <!--Second section which contains two columns-->
     <div class="hurt container">
-      <div class="column sixty">
+      <div class="column sixty desktop">
         <div class="big-media two">
           <img src="./resources/images/information-main.jpg" alt="Man Reading">
         </div>
@@ -49,7 +67,8 @@
       <div class="column forty">
         <div class="strip container">
           <div class="small-image">
-            <img src="./resources/images/information-orientation.jpg" alt="Shadows">
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Shadows">
+            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Shadows">
           </div>
           <div class="baby column">
             <h2>Orientation date</h2>
@@ -60,7 +79,9 @@
 
         <div class="strip container">
           <div class="small-image">
-            <img src="./resources/images/information-campus.jpg" alt="Campus">
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="Campus">
+            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Campus">
+
           </div>
           <div class="baby column">
             <h2>Our campus</h2>
@@ -71,7 +92,9 @@
 
         <div class="strip container">
           <div class="small-image">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="Wise Man">
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Wise Man">
+            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
+
           </div>
           <div class="baby column">
             <h2>Our guest lecture</h2>
@@ -154,7 +177,8 @@
 
 <!--Fourth section which is similar to the second-->
     <div class="thesis column">
-      <h1>Thesis Exhibit</h1>
+      <h1 class="desktop">Thesis Exhibit</h1>
+      <h1 class="mobile">Thesis Exhibits</h1>
       <div class="container">
         <div class="column sixty">
           <div class="big-media">
@@ -162,10 +186,10 @@
               <source src="./resources/videos/thesis.mp4" type="video/mp4">
             </video>
           </div>
-          <h4>Reimagine urban</h4>
-          <span>"Curabitur vitae in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
+          <h4 class="desktop">Reimagine urban</h4>
+          <span class="desktop">"Curabitur vitae in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
         </div>
-        <div class="column forty">
+        <div class="column forty desktop">
           <div class="strip container">
             <div class="small-image">
               <img src="./resources/images/thesis-fisma.jpg" alt="Brainstorming Session">
@@ -191,7 +215,7 @@
 <!--footer section-->
     <footer class="container">
       <span class="tiny">© 2016 Colmar Academy. All rights reserved</span>
-      <nav>
+      <nav class="desktop">
         <span class="tiny">Terms</span>
         <span class="tiny">Privacy</span>
       </nav>
